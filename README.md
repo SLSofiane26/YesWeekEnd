@@ -1,9 +1,3 @@
 # YesWeekEnd
 
-<<<<<<< HEAD
-
-# YesWeekEnd
-
-=======
-
-# OPEN WITH PHP -S LOCALHOST:8080 -T PUBLIC
+# Open with php -s "localhost:8080" -t public

@@ -1,0 +1,122 @@
+{% extends 'base.html.twig' %}
+
+
+{% block title %}
+    Bienvenue sur LE site de City-trip !
+{% endblock %}
+
+{% block body %} 
+
+<div class="container">      
+    <div class="jumbotron mt-4" >
+        <h1 class="display-md-3">Bienvenue sur YesWeekend !</h1>
+        <p class="lead">Nous mettons en relation les voyageurs et les propriétaires qui veulent profiter d'opportunités et gagner de l'argent.</p>
+        <hr class="my-8">
+        <p>Vous êtes voyageur ? et vous voulez voir où vous pourrez loger pour votre prochain city trip ?</p>
+        <p class="lead">
+            <a class="btn btn-success btn mt-4" href="{{ path('ads_index') }}" role="button">Voir nos annonces</a>
+        </p>
+    </div>
+    <h2 class="h1 my-5">Nos appartements Stars</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card bg-light mb-3">  
+                <div class="card-header text-center">
+                    3 chambres, <strong>49euros; /nuit</strong> <br>
+                    <small> pas encore noté</small>
+                </div> 
+                <img src="http://placehold.it/1000x400" alt="Image de l'appart"
+                style="height: 200px; width: 100%; display: block"> 
+
+                <div class="card-body">
+                <h4 class="card-title">
+                appartement de ouf
+                </h4>
+                <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima, numquam. Reprehenderit non doloremque recusandae voluptas nostrum nisi quis nobis impedit.
+                </p>
+                <a href="#" class="btn btn-primary">En savoir plus</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card bg-light mb-3">  
+                <div class="card-header text-center">
+                    3 chambres, <strong>49euros; /nuit</strong> <br>
+                    <small> pas encore noté</small>
+                </div> 
+                <img src="http://placehold.it/1000x400" alt="Image de l'appart"
+                style="height: 200px; width: 100%; display: block"> 
+
+                <div class="card-body">
+                <h4 class="card-title">
+                appartement de ouf
+                </h4>
+                <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima, numquam. Reprehenderit non doloremque recusandae voluptas nostrum nisi quis nobis impedit.
+                </p>
+                <a href="#" class="btn btn-primary">En savoir plus</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card bg-light mb-3">  
+                <div class="card-header text-center">
+                    3 chambres, <strong>49 euros; /nuit</strong> <br>
+                    <small> pas encore noté</small>
+                </div> 
+                <img src="http://placehold.it/1000x400" alt="Image de l'appart"
+                style="height: 200px; width: 100%; display: block"> 
+
+                <div class="card-body">
+                <h4 class="card-title">
+                appartement de ouf
+                </h4>
+                <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima, numquam. Reprehenderit non doloremque recusandae voluptas nostrum nisi quis nobis impedit.
+                </p>
+                <a href="#" class="btn btn-primary">En savoir plus</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h2 class="h1 my-5">Nos propriétaires stars !</h2>
+
+    <div class="row">
+        <div class="col">
+            <div class="card bg-light border-secondary mb-3">
+                <div class="card-body">
+                    <h4 class="card-title">Martin D</h4>
+                    
+                    <hr>
+
+                    <div class="card-text">
+                    <img src="" src="http://placehold.it/64x64" alt="Avatar " class="flaot-left-mr-3">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto, minus?</p>
+                    <a href="#" class="btn btn-primary">En savoir plus !</a>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+        <div class="col">
+            <div class="card bg-light border-secondary mb-3">
+                <div class="card-body">
+                    <h4 class="card-title">Martin D</h4>
+                    
+                    <hr>
+
+                    <div class="card-text">
+                    <img src="" src="http://placehold.it/64x64" alt="Avatar " class="flaot-left-mr-3">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto, minus?</p>
+                    <a href="#" class="btn btn-primary">En savoir plus !</a>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+</div> 
+</div>
+
+{% endblock %}

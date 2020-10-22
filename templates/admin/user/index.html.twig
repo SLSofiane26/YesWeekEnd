@@ -1,0 +1,41 @@
+{% extends 'admin/base.html.twig' %}
+
+{% block title %}Administration des utilisateurs{% endblock %}
+
+{% block body %}
+<div class="container-fluid">
+<h1 class="my-5">Gestion des utilisateurs</h1>
+<table class="table table-hover">
+<thead>
+<tr>
+<th>Id</th>
+<th>FirstName</th>
+<th>LastName</th>
+<th>Email</th>
+<th>Picture</th>
+<th>Introduction</th>
+<th>Description</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+{% for user in users %}
+<td>{{user.id}}</td>
+<td>{{user.FirstName}}</td>
+<td>{{user.LastName}}</td>
+<td>{{user.Email}}</td>
+<td><img src="{{user.Picture}}" alt="" class="avatar avatar-micro"></td>
+<td>{{user.Introduction|raw}}</td>
+<td>{{user.description|raw}}</td>
+<td>
+<a href="{{ path('admin_user_edit', {'id': user.id}) }}" class="btn btn-primary">
+<i class="fas fa-pen"></i>
+</a>
+</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+</div>
+
+{% endblock %}
